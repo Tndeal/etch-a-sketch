@@ -1,0 +1,30 @@
+
+#container {
+	display: grid;
+	justify-content: center;
+	margin: auto;
+	grid-template-columns: repeat(var(--numCols), 1fr);
+    grid-template-rows: repeat(var(--numRows), 1fr);
+	width: 600px;
+	height: 600px;
+	border: black solid 8px;
+}
+
+.gridElement {
+	display: flex;
+	padding: 3px;
+	border: 1px solid black;	
+
+}
+
+#btn {
+	border: 1px solid blue;
+	background-color: lightblue;
+	color:black;
+
+}
+
+:root {
+	--numCols: 1;
+	--numRows: 1;
+}
