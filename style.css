@@ -1,0 +1,46 @@
+
+#container {
+	display: grid;
+	justify-content: center;
+	margin: auto;
+	grid-template-columns: repeat(var(--numCols), 1fr);
+    grid-template-rows: repeat(var(--numRows), 1fr);
+	width: 600px;
+	height: 600px;
+	border: black solid 8px;
+}
+
+.gridElement {
+	display: flex;
+	padding: 3px;
+	border: 1px solid black;	
+
+}
+
+#btn {
+	border: 1px solid blue;
+	background-color: lightblue;
+	color:black;
+
+}
+#red {
+	width: 20px;
+	height: 20px;
+	background-color: red;
+}
+#blue {
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+}
+#green {
+	width: 20px;
+	height: 20px;
+	background-color: green;
+}
+
+
+:root {
+	--numCols: 1;
+	--numRows: 1;
+}
